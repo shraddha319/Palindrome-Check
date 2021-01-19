@@ -1,0 +1,115 @@
+:root {
+  --bg-color: white;
+  --theme-color: black;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+#root {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-header {
+  flex: 1 auto;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.app-header .hero-text {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  padding: 1rem;
+  text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4,
+    2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd,
+    3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4,
+    5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd,
+    6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4,
+    8px 7px 0px #5dabcd;
+  background-color: gray;
+}
+
+.app-header .hero-gif {
+  width: inherit;
+  height: 30vh;
+}
+
+.app-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  border-radius: 1rem;
+  box-shadow: 5px 5px black;
+  background-color: white;
+}
+
+.app-form {
+  flex: 10 auto;
+  margin: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.app-form > * {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.app-form textarea {
+  width: 40vh;
+}
+
+.app-container,
+.app-form textarea,
+.app-form button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  border: 0;
+  outline: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  box-shadow: 0px 5px 10px rgb(44, 82, 120);
+  transition: all 0.3s;
+  border-radius: 5px;
+  border-bottom: 4px solid lighten(gray, 70%);
+}
+
+.app-form button {
+  cursor: pointer;
+}
+
+.app-form button:hover {
+  box-shadow: 0px 15px 25px -5px dodgerblue;
+  transform: scale(1.03);
+}
+
+.app-form button:active {
+  box-shadow: 0px 4px 8px dodgerblue;
+  transform: scale(0.98);
+}
+
+.app-form .output-text {
+  border-style: none;
+}
